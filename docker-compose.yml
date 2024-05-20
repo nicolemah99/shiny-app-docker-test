@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  shiny-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3839:3838"
+    volumes:
+      - ./example-app:/srv/shiny-server/example-app
+    environment:
+      - RENV_PATHS_ROOT=/srv/shiny-server/example-app/renv
