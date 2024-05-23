@@ -4,9 +4,3 @@ services:
     image: nicolemah99/shiny-app-example:latest
     ports:
       - ":3838"
-    networks:
-      - shiny-network
-
-networks:
-  shiny-network:
-    driver: bridge
