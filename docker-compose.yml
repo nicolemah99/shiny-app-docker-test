@@ -6,4 +6,9 @@ services:
     ports:
       - ":3838"
     networks:
-      - bridge
+      - default_bridge  # Reference the existing bridge network
+
+networks:
+  default_bridge:
+    external:
+      name: bridge  # Use the predefined bridge network
