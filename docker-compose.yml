@@ -1,7 +1,9 @@
 version: '3.8'
 services:
   shiny-app:
-    build:
-      context: .  
+    build: .
+    container_name: shiny-app-container  
     ports:
       - ":3838"
+    networks:
+      - bridge
