@@ -4,8 +4,6 @@ services:
     image: nicolemah99/shiny-app-example:latest
     ports:
       - ":3838"
-    volumes:
-      - shiny-app-data:/srv/shiny-server
     networks:
       - shiny-network
 
