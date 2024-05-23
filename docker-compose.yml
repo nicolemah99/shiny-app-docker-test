@@ -1,6 +1,6 @@
 version: '3.8'
 services:
   shiny-app:
-    image: nicolemah99/shiny-app-example:latest
+    image: Dockerfile
     ports:
       - ":3838"
