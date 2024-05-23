@@ -12,6 +12,3 @@ services:
 networks:
   shiny-network:
     driver: bridge
-
-volumes:
-  shiny-app-data:
